@@ -1,0 +1,77 @@
+html {
+    overflow-y: scroll;
+  }
+
+#header{
+    position: fixed;
+    background-color:#201a1a;
+    height: 175px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+
+}
+
+#header> p{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 35vw;
+    height: 4vh;
+    outline: none;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#recent_images{
+    
+    position: absolute; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;  
+    margin-top: 175px; 
+}
+
+#recent_images> img{
+    border: 2px solid black;
+    padding: 3px;
+    margin: 5px;
+}
+
+#error{
+    font-size: 30px;
+    color: red;
+    z-index: 2;
+    
+    
+}
+
+.selectedImg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color:rgba(0, 0, 0.5, 0.5);
+}
+
+.selectedImg img{
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    z-index: 3;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+    border: 3px solid white; 
+}
+
+.suggestionList> span{
+    border: 1px solid white;
+} 
+
